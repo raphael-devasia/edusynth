@@ -1,0 +1,14 @@
+{
+  "name": "smart-school-seeders",
+  "version": "1.0.0",
+  "description": "Database seeders for Smart School Management System",
+  "main": "seed.js",
+  "scripts": {
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^7.0.0",
+    "uuid": "^9.0.0"
+  }
+}

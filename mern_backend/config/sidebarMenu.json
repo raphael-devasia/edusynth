@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "icon": "fa fa-ioxhost ftlayer",
+    "lang_key": "front_office",
+    "label": "Front Office",
+    "access_permissions": "('admission_enquiry', 'can_view') || ('visitor_book', 'can_view') ||       ('phon_call_log', 'can_view') ||  ('postal_dispatch', 'can_view') ||       ('postal_receive', 'can_view') || ('complaint', 'can_view') ||('setup_font_office', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 1, "sidebar_menu_id": 1, "lang_key": "admission_enquiry", "label": "Admission Enquiry", "url": "admin/enquiry", "access_permissions": "('admission_enquiry', 'can_view')", "is_active": 1},
+      {"id": 2, "sidebar_menu_id": 1, "lang_key": "visitor_book", "label": "Visitor Book", "url": "admin/visitors", "access_permissions": "('visitor_book', 'can_view')", "is_active": 1},
+      {"id": 3, "sidebar_menu_id": 1, "lang_key": "phone_call_log", "label": "Phone Call Log", "url": "admin/generalcall", "access_permissions": "('phone_call_log', 'can_view')", "is_active": 1},
+      {"id": 4, "sidebar_menu_id": 1, "lang_key": "postal_dispatch", "label": "Postal Dispatch", "url": "admin/dispatch", "access_permissions": "('postal_dispatch', 'can_view')", "is_active": 1},
+      {"id": 5, "sidebar_menu_id": 1, "lang_key": "postal_receive", "label": "Postal Receive", "url": "admin/receive", "access_permissions": "('postal_receive', 'can_view')", "is_active": 1},
+      {"id": 6, "sidebar_menu_id": 1, "lang_key": "complain", "label": "Complain", "url": "admin/complaint", "access_permissions": "('complaint', 'can_view')", "is_active": 1},
+      {"id": 7, "sidebar_menu_id": 1, "lang_key": "setup_front_office", "label": "Setup Front Office", "url": "admin/visitorspurpose", "access_permissions": "('setup_font_office', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "fa fa-user-plus ftlayer",
+    "lang_key": "student_information",
+    "label": "Student Information",
+    "access_permissions": "('student', 'can_view') || ('student', 'can_add') || ('student_history', 'can_view') || ('student_categories', 'can_view') || ('student_houses', 'can_view') || ('disable_student', 'can_view') || ('disable_reason', 'can_view') || ('online_admission', 'can_view') || ('multiclass_student', 'can_view') || ('disable_reason', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 9, "sidebar_menu_id": 2, "lang_key": "student_admission", "label": "Student Admission", "url": "student/create", "access_permissions": "('student', 'can_add')", "is_active": 1},
+      {"id": 10, "sidebar_menu_id": 2, "lang_key": "online_admission", "label": "Online Admission", "url": "admin/onlinestudent", "access_permissions": "('online_admission', 'can_view')", "is_active": 1},
+      {"id": 11, "sidebar_menu_id": 2, "lang_key": "disable_student", "label": "Disabled Students", "url": "student/disablestudentslist", "access_permissions": "('disable_student', 'can_view')", "is_active": 1},
+      {"id": 40, "sidebar_menu_id": 2, "lang_key": "student_details", "label": "Student Details", "url": "student/search", "access_permissions": "('student', 'can_view')", "is_active": 1},
+      {"id": 21, "sidebar_menu_id": 2, "lang_key": "multi_class_student", "label": "Multi Class Student", "url": "student/multiclass", "access_permissions": "('multi_class_student', 'can_view')", "is_active": 1},
+      {"id": 22, "sidebar_menu_id": 2, "lang_key": "bulk_delete", "label": "Bulk Delete", "url": "student/bulkdelete", "access_permissions": "('student', 'can_delete')", "is_active": 1},
+      {"id": 23, "sidebar_menu_id": 2, "lang_key": "student_categories", "label": "Student Categories", "url": "category", "access_permissions": "('student_categories', 'can_view')", "is_active": 1},
+      {"id": 24, "sidebar_menu_id": 2, "lang_key": "student_house", "label": "Student House", "url": "admin/schoolhouse", "access_permissions": "('student_houses', 'can_view')", "is_active": 1},
+      {"id": 25, "sidebar_menu_id": 2, "lang_key": "disable_reason", "label": "Disable Reason", "url": "admin/disable_reason", "access_permissions": "('disable_reason', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "fa fa-money ftlayer",
+    "lang_key": "fees_collection",
+    "label": "Fees Collection",
+    "access_permissions": "('collect_fees', 'can_view') || ('search_fees_payment', 'can_view') || ('search_due_fees', 'can_view') || ('fees_statement', 'can_view') || ('fees_carry_forward', 'can_view') || ('fees_master', 'can_view') || ('fees_group', 'can_view') || ('fees_type', 'can_view') || ('fees_discount', 'can_view') || ('accountants', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 12, "sidebar_menu_id": 3, "lang_key": "collect_fees", "label": "Collect Fees", "url": "studentfee", "access_permissions": "('collect_fees', 'can_view')", "is_active": 1},
+      {"id": 13, "sidebar_menu_id": 3, "lang_key": "search_fees_payment", "label": "Search Fees Payment", "url": "studentfee/searchpayment", "access_permissions": "('search_fees_payment', 'can_view')", "is_active": 1},
+      {"id": 14, "sidebar_menu_id": 3, "lang_key": "search_due_fees", "label": "Search Due Fees", "url": "studentfee/feesearch", "access_permissions": "('search_due_fees', 'can_view')", "is_active": 1},
+      {"id": 15, "sidebar_menu_id": 3, "lang_key": "fees_master", "label": "Fees Master", "url": "admin/feemaster", "access_permissions": "('fees_master', 'can_view')", "is_active": 1},
+      {"id": 16, "sidebar_menu_id": 3, "lang_key": "fees_group", "label": "Fees Group", "url": "admin/feegroup", "access_permissions": "('fees_group', 'can_view')", "is_active": 1},
+      {"id": 47, "sidebar_menu_id": 3, "lang_key": "fees_type", "label": "Fees Type", "url": "admin/feetype", "access_permissions": "('fees_type', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 4,
+    "icon": "fa fa-usd ftlayer",
+    "lang_key": "income",
+    "label": "Income",
+    "access_permissions": "('income', 'can_view') || ('search_income', 'can_view') || ('income_head', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 17, "sidebar_menu_id": 4, "lang_key": "add_income", "label": "Add Income", "url": "admin/income", "access_permissions": "('income', 'can_view')", "is_active": 1},
+      {"id": 18, "sidebar_menu_id": 4, "lang_key": "search_income", "label": "Search Income", "url": "admin/income/incomesearch", "access_permissions": "('search_income', 'can_view')", "is_active": 1},
+      {"id": 19, "sidebar_menu_id": 4, "lang_key": "income_head", "label": "Income Head", "url": "admin/incomehead", "access_permissions": "('income_head', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 5,
+    "icon": "fa fa-credit-card ftlayer",
+    "lang_key": "expense",
+    "label": "Expense",
+    "access_permissions": "('expense', 'can_view') || ('search_expense', 'can_view') || ('expense_head', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 29, "sidebar_menu_id": 7, "lang_key": "add_expense", "label": "Add Expense", "url": "admin/expense", "access_permissions": "('expense', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 6,
+    "icon": "fa fa-calendar-check-o ftlayer",
+    "lang_key": "attendance",
+    "label": "Attendance",
+    "access_permissions": "('student_attendance', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 48, "sidebar_menu_id": 10, "lang_key": "attendance_by_date", "label": "Attendance by Date", "url": "admin/stuattendence/attendencereport", "access_permissions": "('attendance_by_date', 'can_view')", "is_active": 1},
+      {"id": 49, "sidebar_menu_id": 10, "lang_key": "student_attendance", "label": "Student Attendance", "url": "admin/stuattendence", "access_permissions": "('student_attendance', 'can_view')", "is_active": 1},
+      {"id": 50, "sidebar_menu_id": 10, "lang_key": "approve_leave", "label": "Approve Leave", "url": "admin/approve_leave", "access_permissions": "('approve_leave', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 7,
+    "icon": "fa fa-map-o ftlayer",
+    "lang_key": "examinations",
+    "label": "Examinations",
+    "access_permissions": "('exam_group', 'can_view') || ('exam_result', 'can_view') || ('design_admit_card', 'can_view') || ('print_admit_card', 'can_view') || ('design_marksheet', 'can_view') || ('print_marksheet', 'can_view') || ('marks_grade', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 51, "sidebar_menu_id": 11, "lang_key": "exam_group", "label": "Exam Group", "url": "admin/examgroup", "access_permissions": "('exam_group', 'can_view')", "is_active": 1},
+      {"id": 52, "sidebar_menu_id": 11, "lang_key": "exam_schedule", "label": "Exam Schedule", "url": "admin/exam_schedule", "access_permissions": "('student_attendance', 'can_view')", "is_active": 1},
+      {"id": 53, "sidebar_menu_id": 11, "lang_key": "exam_result", "label": "Exam Result", "url": "admin/examresult", "access_permissions": "('exam_result', 'can_view')", "is_active": 1},
+      {"id": 54, "sidebar_menu_id": 11, "lang_key": "design_admit_card", "label": "Design Admit Card", "url": "admin/admitcard", "access_permissions": "('design_admit_card', 'can_view')", "is_active": 1},
+      {"id": 55, "sidebar_menu_id": 11, "lang_key": "print_admit_card", "label": "Print Admit Card", "url": "admin/examresult/admitcard", "access_permissions": "('print_admit_card', 'can_view')", "is_active": 1},
+      {"id": 56, "sidebar_menu_id": 11, "lang_key": "design_marksheet", "label": "Design Marksheet", "url": "admin/marksheet", "access_permissions": "('design_marksheet', 'can_view')", "is_active": 1},
+      {"id": 57, "sidebar_menu_id": 11, "lang_key": "print_marksheet", "label": "Print Marksheet", "url": "admin/examresult/marksheet", "access_permissions": "('print_marksheet', 'can_view')", "is_active": 1},
+      {"id": 58, "sidebar_menu_id": 11, "lang_key": "marks_grade", "label": "Marks Grade", "url": "admin/grade", "access_permissions": "('marks_grade', 'can_view')", "is_active": 1},
+      {"id": 59, "sidebar_menu_id": 11, "lang_key": "marks_division", "label": "Marks Division", "url": "admin/marksdivision", "access_permissions": "('marks_division', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 8,
+    "icon": "fa fa-rss ftlayer",
+    "lang_key": "online_examinations",
+    "label": "Online Examinations",
+    "access_permissions": "('online_examination', 'can_view') ||  ('question_bank', 'can_view')",
+    "is_active": 1,
+    "children": [
+      {"id": 60, "sidebar_menu_id": 12, "lang_key": "online_exam", "label": "Online Exam", "url": "admin/onlineexam", "access_permissions": "('online_examination', 'can_view')", "is_active": 1}
+    ]
+  },
+  {
+    "id": 9,
+    "icon": "fa fa-list-alt ftlayer",
+    "lang_key": "lesson_plan",
+    "label": "Lesson Plan",
+    "access_permissions": "('manage_lesson_plan', 'can_view') || ('manage_syllabus_status', 'can_view') || ('lesson', 'can_view') ||  ('topic', 'can_view')||  ('copy_old_lesson', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 10,
+    "icon": "fa fa-mortar-board ftlayer",
+    "lang_key": "academics",
+    "label": "Academics",
+    "access_permissions": "('class_timetable', 'can_view') || ('teachers_timetable', 'can_view') || ('assign_class_teacher', 'can_view') || ('promote_student', 'can_view') || ('subject_group', 'can_view') || ('section', 'can_view') || ('subject', 'can_view') || ('class', 'can_view') || ('section', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 11,
+    "icon": "fa fa-sitemap ftlayer",
+    "lang_key": "human_resource",
+    "label": "Human Resource",
+    "access_permissions": "('staff', 'can_view') || ('approve_leave_request', 'can_view') || ('apply_leave', 'can_view') || ('leave_types', 'can_view') || ('teachers_rating', 'can_view') || ('department', 'can_view') || ('designation', 'can_view') || ('disable_staff', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 12,
+    "icon": "fa fa-bullhorn ftlayer",
+    "lang_key": "communicate",
+    "label": "Communicate",
+    "access_permissions": "('notice_board', 'can_view') || ('email', 'can_view') || ('sms', 'can_view') || ('email_sms_log', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 13,
+    "icon": "fa fa-download ftlayer",
+    "lang_key": "download_center",
+    "label": "Download Center",
+    "access_permissions": "('upload_content', 'can_view') || ('video_tutorial', 'can_view') || ('content_type', 'can_view') || ('content_share_list', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 14,
+    "icon": "fa fa-flask ftlayer",
+    "lang_key": "homework",
+    "label": "Homework",
+    "access_permissions": "('homework', 'can_view') || ('homework', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 15,
+    "icon": "fa fa-book ftlayer",
+    "lang_key": "library",
+    "label": "Library",
+    "access_permissions": "('books', 'can_view') || ('issue_return', 'can_view') || ('add_staff_member', 'can_view') || ('add_student', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 16,
+    "icon": "fa fa-object-group ftlayer",
+    "lang_key": "inventory",
+    "label": "Inventory",
+    "access_permissions": "('issue_item', 'can_view') || ('item_stock', 'can_view') || ('item', 'can_view') || ('item_category', 'can_view') || ('item_category', 'can_view') || ('store', 'can_view') || ('supplier', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 17,
+    "icon": "fa fa-bus ftlayer",
+    "lang_key": "transport",
+    "label": "Transport",
+    "access_permissions": "('routes', 'can_view') || ('vehicle', 'can_view') || ('assign_vehicle', 'can_view') || ('transport_fees_master', 'can_view') || ('pickup_point', 'can_view') || ('route_pickup_point', 'can_view') || ('student_transport_fees', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 18,
+    "icon": "fa fa-building-o ftlayer",
+    "lang_key": "hostel",
+    "label": "Hostel",
+    "access_permissions": "('hostel_rooms', 'can_view') || ('room_type', 'can_view') || ('hostel', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 19,
+    "icon": "fa fa-newspaper-o ftlayer",
+    "lang_key": "certificate",
+    "label": "Certificate",
+    "access_permissions": "('student_certificate', 'can_view') || ('generate_certificate', 'can_view') || ('student_id_card', 'can_view') || ('generate_id_card', 'can_view') || ('staff_id_card', 'can_view') || ('generate_staff_id_card', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 20,
+    "icon": "fa fa-empire ftlayer",
+    "lang_key": "front_cms",
+    "label": "Front CMS",
+    "access_permissions": "('event', 'can_view') || ('gallery', 'can_view') || ('notice', 'can_view') || ('media_manager', 'can_view') || ('pages', 'can_view') || ('menus', 'can_view') || ('banner_images', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 21,
+    "icon": "fa fa-universal-access ftlayer",
+    "lang_key": "alumni",
+    "label": "Alumni",
+    "access_permissions": "('manage_alumni', 'can_view') || ('events', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 22,
+    "icon": "fa fa-line-chart ftlayer",
+    "lang_key": "reports",
+    "label": "Reports",
+    "access_permissions": "('student_report', 'can_view') || ('guardian_report', 'can_view') || ('student_history', 'can_view') || ('student_login_credential_report', 'can_view') || ('class_subject_report', 'can_view') || ('admission_report', 'can_view') || ('sibling_report', 'can_view') || ('evaluation_report', 'can_view') || ('student_profile', 'can_view') || ('fees_statement', 'can_view') || ('balance_fees_report', 'can_view') || ('fees_collection_report', 'can_view') || ('online_fees_collection_report', 'can_view') || ('income_report', 'can_view') || ('expense_report', 'can_view') || ('payroll_report', 'can_view') || ('income_group_report', 'can_view') || ('expense_group_report', 'can_view') || ('attendance_report', 'can_view') || ('staff_attendance_report', 'can_view') || ('exam_marks_report', 'can_view') ||        ('online_exam_wise_report', 'can_view') || ('online_exams_report', 'can_view') || ('online_exams_attempt_report', 'can_view') || ('online_exams_rank_report', 'can_view') || ('payroll_report', 'can_view') || ('transport_report', 'can_view') || ('hostel_report', 'can_view') || ('audit_trail_report', 'can_view') || ('user_log', 'can_view') || ('book_issue_report', 'can_view') || ('book_due_report', 'can_view') || ('book_inventory_report', 'can_view') || ('stock_report', 'can_view') ||      ('add_item_report', 'can_view') || ('issue_inventory_report', 'can_view') || ('syllabus_status_report', 'can_view') ||    ('teacher_syllabus_status_report', 'can_view') || ('daily_collection_report', 'can_view') || ('balance_fees_statement', 'can_view') || ('balance_fees_report_with_remark', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 23,
+    "icon": "fa fa-gears ftlayer",
+    "lang_key": "system_settings",
+    "label": "System Settings",
+    "access_permissions": "('general_setting', 'can_view') || ('session_setting', 'can_view') || ('notification_setting', 'can_view') || ('sms_setting', 'can_view') || ('email_setting', 'can_view') || ('payment_methods', 'can_view') || ('languages', 'can_view') || ('user_status', 'can_view') || ('backup_restore', 'can_view') || ('print_header_footer', 'can_view') || ('backup', 'can_view') || ('front_cms_setting', 'can_view') || ('custom_fields', 'can_view') || ('system_fields', 'can_view') || ('student_profile_update', 'can_view') || ('currency', 'can_view') || ('language_switcher', 'can_view') || ('sidebar_menu', 'can_view') || ('online_admission', 'can_view')",
+    "is_active": 1,
+    "children": []
+  },
+  {
+    "id": 24,
+    "icon": "fa fa-calendar",
+    "lang_key": "annual_calendar",
+    "label": "Annual Calendar",
+    "access_permissions": "('annual_calendar', 'can_view')",
+    "is_active": 0,
+    "children": []
+  },
+  {
+    "id": 25,
+    "icon": "fa fa-ioxhost ftlayer",
+    "lang_key": "student_cv",
+    "label": "Student CV",
+    "access_permissions": "('download_cv', 'can_view') || ('build_cv', 'can_view') || ('resume_setting', 'can_view') || ('student_resume_details', 'can_view')",
+    "is_active": 0,
+    "children": []
+  }
+]
+
