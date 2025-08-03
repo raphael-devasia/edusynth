@@ -56,6 +56,7 @@ const StudentSchema = new mongoose.Schema({
   guardian_pic: { type: String },
   dis_reason: { type: String },
   dis_note: { type: String },
+  disable_at: { type: Date },
   hostel_room_id: { type: mongoose.Schema.Types.ObjectId, ref: 'HostelRoom' },
   parent_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Parent' },
   class_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Class' },

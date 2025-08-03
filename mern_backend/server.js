@@ -59,6 +59,10 @@ app.use('/api/classes', classRoutes);
 const sectionRoutes = require('./routes/section');
 app.use('/api/sections', sectionRoutes);
 
+// Online Admission routes
+const onlineAdmissionRoutes = require('./routes/onlineAdmission');
+app.use('/api/online-admission', onlineAdmissionRoutes);
+
 // Session routes
 const sessionRoutes = require('./routes/session');
 app.use('/api/sessions', sessionRoutes);

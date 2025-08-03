@@ -14,6 +14,12 @@ router.get('/:id', studentController.getStudentById);
 // Update a student
 router.put('/:id', studentController.updateStudent);
 
+// Disable a student
+router.post('/:id/disable', studentController.disableStudent);
+
+// Enable a student
+router.post('/:id/enable', studentController.enableStudent);
+
 // Delete a student
 router.delete('/:id', studentController.deleteStudent);
 
